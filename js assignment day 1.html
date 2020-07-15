@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS assignment day 1</title>
+</head>
+<body>
+	<h1>Js assignment 1</h1>
+<p><strong>console.log():-</strong>Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.</p>
+<p><strong>console.error():-</strong>Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.</p>
+<p><strong>console.warn():-</strong>Used to log warning message to the console. By default the warning message will be highlighted with yellow color.</p>
+<p><strong>console.clear():-</strong>Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned</p>
+<p><strong>console.table():-</strong>This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.</p>
+<p><strong>console.count():-</strong>This method is used to count the number that the function hit by this counting method</p>
+<h1>JS assignment 2</h1>
+<p><strong>Var</strong></p>
+<ul>
+	<li>Scope essentially means where these variables are available for use. var declarations are globally scoped or function/locally scoped.</li>
+	<li>var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.</li>
+	<li>var variables can be re-declared and updated</li>
+</ul>
+<p>console.log (greeter);<br>
+    var greeter = "say hello"</p>
+<p><strong>Let</strong></p>
+<ul>
+	<li>solves the problem with var</li>
+	<li>A variable declared in a block with let  is only available for use within that block.</li>
+	<li>Just like var,  a variable declared with let can be updated within its scope. Unlike var, a let variable cannot be re-declared within its scope.</li>
+</ul> 
+<p>let greeting = "say Hi";<br>
+    if (true) {<br>
+        let greeting = "say Hello instead";<br>
+        console.log(greeting); // "say Hello instead"<br>
+    }<br>
+    console.log(greeting); // "say Hi"</p>
+<p><strong>Const</strong> 
+<ul>
+	<li>Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.</li>
+	<li>The value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared.</li>
+	<li>While var and let can be declared without being initialized, const must be initialized during declaration.</li>
+</ul>  
+<p>const greeting = {<br>
+        message: "say Hi",<br>
+        times: 4<br>
+    }</p> 
+
+<h1>JS assignment 3(Data Types)</h1>
+<p><strong>Strings:-</strong>A string (or a text string) is a series of characters like "John Doe".
+Strings are written with quotes. You can use single or double quotes<br>
+var carName1 = "Volvo XC60";</p>
+<p><strong>Numbers:-</strong>JavaScript has only one type of numbers.Numbers can be written with, or without decimals<br>
+var x2 = 34;</p>
+<p><strong>Booleans:-</strong>Booleans can only have two values: true or false</p>
+<p><strong>Arrays</strong>JavaScript arrays are written with square brackets.Array items are separated by commas.
+The following code declares (creates) an array called cars, containing three items (car names)<br>
+var cars = ["Saab", "Volvo", "BMW"];</p>
+<p><strong>Objects:-</strong>JavaScript objects are written with curly braces {}.Object properties are written as name:value pairs, separated by commas.<br>
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+</p>
+
+
+</body>
+</html>
