@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS assignment 2 & 3</title>
+</head>
+<body>
+	<h1>Methods of String</h1>
+	<p><strong>localeCompare():</strong>compares two strings in the current locale<br>
+		var str1 = "ab";<br>
+var str2 = "cd";<br>
+var n = str1.localeCompare(str2);
+</p>
+
+	<p><strong>match() :</strong>method searches a string for a match against a regular expression, and returns the matches, as an Array object.<br>
+		var str = "The rain in SPAIN stays mainly in the plain";<br>
+var res = str.match(/ain/g);
+</p>
+	<p><strong>substring() :</strong>method extracts the characters from a string, between two specified indices, and returns the new sub string.<br>
+		var str = "Hello world!";<br>
+var res = str.substring(1, 4);</p>
+	<p><strong>trim():</strong>method removes whitespace from both sides of a string.<br>
+		var str = "       Hello World!        "<br>;
+alert(str.trim());
+</p>
+<h1>Array methods</h1>
+<p><strong>shift():</strong>The shift() method removes the first array element and "shifts" all other elements to a lower index.<br>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+fruits.shift();</p>
+<p><strong>unshift():</strong>The unshift() method returns the new array length.<br>
+</p>
+<p><strong>splice():</strong>The splice() method can be used to add new items to an array<br>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+fruits.splice(2, 0, "Lemon", "Kiwi");</p>
+<p><strong>concat()</strong>The concat() method creates a new array by merging (concatenating) existing arrays<br>
+var myGirls = ["Cecilie", "Lone"];<br>
+var myBoys = ["Emil", "Tobias", "Linus"];<br>
+var myChildren = myGirls.concat(myBoys); </p>
+</body>
+</html>
