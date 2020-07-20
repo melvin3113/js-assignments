@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ternary Operator</title>
+</head>
+<body>
+    Enter an amount: <input type="text" id="num" />
+    <input type="submit" id="Submit" onclick="javascript:Checknum()" />
+</body>
+
+<script>
+    function Checknum() {
+        var result;
+        var num = document.getElementById('num');
+
+        result = (num.value >= 100) ? 'true' : 'enter above 100!';
+        alert(result);
+    }
+
+
+</script>
+</html>
