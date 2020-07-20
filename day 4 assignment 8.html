@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>
+		function ask(question, yes, no) {<br>
+  if (confirm(question)) yes()<br>
+  else no();<br>
+}<br>
+
+ask(<br>
+  "Do you agree?",<br>
+  () => alert("You agreed."),<br>
+  () => alert("You canceled the execution.")<br>
+);
+
+</body>
+</html>
