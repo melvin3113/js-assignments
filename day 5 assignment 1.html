@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cubes</title>
+</head>
+<body>
+	Number: <input type="number" id="myNumber" value="">
+<button onclick="cube()">Try it</button>
+<p id="demo"></p>
+	<script type="text/javascript">
+		var i,y;
+        
+        function cube()
+        {
+        	var x = document.getElementById("myNumber").value;
+  document.getElementById("demo").innerHTML = x;
+        	for(i=0;i<=x;i++)
+         {
+         	if (i%2!=0) {
+                  y=i**3;
+
+         	}
+         	console.log(y);
+         }
+     }
+	</script>
+
+</body>
+</html>
