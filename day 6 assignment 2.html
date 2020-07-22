@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cubes</title>
+</head>
+<body>
+	Number: <input type="number" id="myNumber" value="">
+<button onclick="tables()">Try it</button>
+<p id="demo"></p>
+	<script type="text/javascript">
+		var i,y;
+        
+        function tables()
+        {
+        	var x = document.getElementById("myNumber").value;
+  document.getElementById("demo").innerHTML = x;
+        	for(i=1;i<=x;i++)
+         {
+         	if (i!=0) {
+                y=x*i;
+
+         	}
+         	console.log(x,"*",i,"=",y);
+         }
+     }
+	</script>
+
+</body>
+</html>
