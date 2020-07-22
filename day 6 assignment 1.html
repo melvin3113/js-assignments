@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>color</title>
+<link rel="stylesheet" href="color.css">
+</head>
+<body>
+	<div class="bg"></div>
+<script type="text/javascript">
+	var bg = document.querySelector('.bg');
+var colours = ["#111111", "#BAC7E8", "#D9EEFF", "#BADFE8"];
+var index = 0;
+
+function change() {
+
+  if(index >= colours.length){ clearInterval(timer); }
+  
+
+  bg.style.backgroundColor = colours[index++];
+}
+
+
+var timer = setInterval(change, 2000); 
+
+</script>
+	
+</body>
+</html>
